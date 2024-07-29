@@ -1,18 +1,20 @@
 const myLibrary = [];
 
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+}
+
 const book1 = new Book("To Kill a Mockingbird", "Harper Lee", 281, true);
 const book2 = new Book("1984", "George Orwell", 328, false);
 const book3 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 180, true);
 const book4 = new Book("The Catcher in the Rye", "J.D. Salinger", 214, false);
 
 myLibrary.push(book1, book2, book3, book4);
-
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-}
 
 function createBookCard(book) {
   const bookCard = document.createElement('div');
